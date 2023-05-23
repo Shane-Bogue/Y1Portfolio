@@ -12,6 +12,10 @@ https://codepen.io/cjl750/pen/mXbMyo
     src: url('Sonorous-Rough.otf') format('opentype');
 }
 
+:root {
+    --padding: 2.5rem;
+}
+
 .pink {
     position: fixed;
     width: 100%;
@@ -69,7 +73,7 @@ main {
     background-color: #10121b;
     position: absolute;
     bottom: 45%;
-    right: 2.5rem;
+    right: var(--padding);
     z-index: 100;
 }
 
@@ -88,7 +92,7 @@ main {
 .right {
     animation: bounceright 2s infinite;
     animation-delay: 1s;
-    right: 2.5rem;
+    right: var(--padding)
 }
 
   @keyframes bounce {
@@ -136,7 +140,7 @@ section {
 }
 
 .header-info {
-    padding: 2.5rem;
+    padding: var(--padding);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,7 +153,7 @@ section {
 button {
     position: absolute;
     bottom: 0;
-    margin-block: 5rem;
+    margin-block: calc(2* var(--padding));
     padding: 15px 25px;
     border-radius: .25rem;
     background-color: #e09c96;
@@ -164,12 +168,12 @@ button:hover {
 
 .site-button {
     position: relative;
-    margin-block: -2.5rem;
+    margin-block: calc(-1 * var(--padding))
 }
 
 .header-info .title{
     font-size: 3rem;
-    margin-block: 2.5rem;
+    margin-block: var(--padding)
 }
 
 .display {
@@ -192,7 +196,7 @@ button:hover {
     background-position: center;
     background-image: url(/Images/pfp.png);
 
-    margin-inline: 2.5rem;
+    margin-inline: var(--padding)
 }
 
 .display-info {
@@ -207,15 +211,15 @@ button:hover {
 
 .display-info .content {
     text-align: center;
-    margin: 2.5rem;
+    margin: var(--padding);
     font-size: 1.2rem;
-    line-height: calc(1ex / 0.32);
+    line-height: calc(1ex / 0.52);
 }
 
 .projects {
     display: flex;
     flex-direction: row;
-    padding: 2.5rem;
+    padding: var(--padding);
     width: 95%;
     height: 40vh;
     align-self: center;
@@ -297,7 +301,7 @@ footer{
 }
 
 aside {
-    padding: 2.5rem;
+    padding: var(--padding);
     height: 100vh;
     display: grid;
     place-items: center;
@@ -327,7 +331,7 @@ aside nav {
 
 aside nav a{
     padding: 1rem;
-    padding-block: 2.5rem;
+    padding-block: var(--padding);
     border-left: #e09c96 1px solid;
     text-decoration: none;
 }
@@ -335,3 +339,14 @@ aside nav a{
 aside nav a.active{
     background-color: #e09c96;
 }
+
+
+@media (max-width: 1000px) {
+    :root{
+        --padding: 2.5vw;
+    }
+
+    *{
+        font-size: 1vw;
+    }
+  }
