@@ -132,7 +132,7 @@ section {
     height: 100vh;
     aspect-ratio: 1/1;
     background-size: cover;
-    background-image: url(/Images/pfp.png);
+    background-image: url(./Images/pfp.png);
 }
 
 .header-info {
