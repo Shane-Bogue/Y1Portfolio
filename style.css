@@ -4,12 +4,12 @@ https://codepen.io/cjl750/pen/mXbMyo
 
 @font-face {
     font-family: 'Fox';
-    src: url('Fonts/FoxAndBower.otf') format('opentype');
+    src: url('FoxAndBower.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Sonora';
-    src: url('Fonts/Sonorous-Rough.otf') format('opentype');
+    src: url('Sonorous-Rough.otf') format('opentype');
 }
 
 .pink {
@@ -132,7 +132,7 @@ section {
     height: 100vh;
     aspect-ratio: 1/1;
     background-size: cover;
-    background-image: url(Images/pfp.png);
+    background-image: url(pfp.png);
 }
 
 .header-info {
